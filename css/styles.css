@@ -6,6 +6,7 @@
     --color-but-active: #404BBF;
     --color-light: #F4F4FD;
     --color-soft: #E7E9FC;
+    --color-border-icons: #8E8F99; 
 }
 
 h1,
@@ -167,6 +168,11 @@ body {
     padding-bottom: 192px;
     background: var(--color-title);
     text-align: center;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url(../img/people-office.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
 
 .hero-button {
@@ -251,6 +257,22 @@ body {
     color: var(--color-text);
 }
 
+.about-logo {
+    display: block;
+
+}
+
+.about-bg {
+    display: flex;
+    width: 264px;
+    height: 112px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-light);
+    margin-bottom: 8px;
+
+}
+
 /* ======================WORKS======================= */
 
 .works  {
@@ -262,7 +284,8 @@ body {
 }
 
 .works-title,
-.team-title {
+.team-title,
+.customers-title {
     font-weight: 500;
     font-size: 36px;
     line-height: 1.1;
@@ -325,6 +348,64 @@ body {
 .team-item:not(:last-child) {
     margin-right: 24px;
 }
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color:var(--color-accent);
+}
+
+.social-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 12px;
+}
+
+.social-list-item:not(:last-child) {
+    margin-right: 24px;
+}
+
+.social-icon {
+    fill: var(--color-light);
+}
+
+/* ===========================CUSTOMERS====================== */
+
+.customers-link {
+    display: flex;
+    border: 1px solid var(--color-border-icons);
+    border-radius: 4px;
+    padding: 16px 32px;
+}
+
+.customers-list {
+    display: flex;
+    justify-content: center;
+}
+
+.customers-item:not(:last-child) {
+    margin-right: 24px;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+    border: 1px solid var(--color-accent);
+}
+
+.customers-icon {
+    fill: var(--color-border-icons);
+}
+
+.customers-icon:hover,
+.customers-icon:focus {
+    fill: var(--color-accent);
+}
+
+
 
 /* ================FOOTER===================== */
 
