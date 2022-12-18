@@ -7,6 +7,7 @@
     --color-light: #F4F4FD;
     --color-soft: #E7E9FC;
     --color-border-icons: #8E8F99; 
+    --color-icon-hover: #31D0AA;
 }
 
 h1,
@@ -185,23 +186,18 @@ body {
     color: var(--color-white);
     background-color: var(--color-accent);
     border: none;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
     padding: 16px 32px;
 }
 
-
-.button:hover,
-.button:focus {
-    background: var(--color-accent);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    border-radius: 4px;
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #404BBF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.button:active {
-    background-color: var(--color-but-active);
-}
+
 
 /* ===================ABOUT============== */
 
@@ -329,7 +325,6 @@ body {
 .team-name-position {
     padding: 32px 16px;
     text-align: center;
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
 }
 
@@ -344,6 +339,7 @@ body {
 .team-item {
     background: var(--color-white);
     width: calc((100% - 72px)/4);
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .team-item:not(:last-child) {
     margin-right: 24px;
@@ -429,6 +425,51 @@ body {
     margin-top: 16px;
 }
 
+.footer-box {
+    display: flex;
+}
+
+.footer-social {
+    margin-left: 120px;
+}
+
+.footer-title {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    margin-bottom: 16px;
+    color: var(--color-white);
+}
+
+.social-link-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1)
+}
+
+
+.footer-social-item:not(:last-child) {
+    margin-right: 16px;
+}
+
+.footer-social-icon {
+    fill: var(--color-light);
+}
+
+.social-link-footer:hover,
+.social-link-footer:focus {
+    background-color:var(--color-icon-hover)
+}
+
+
+
+
+
 
 
 .btn {
@@ -511,6 +552,12 @@ body {
     width: calc(100%/3 - 24px);
     margin-left: 24px;
     margin-top: 48px;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.16);
 }
 
 .filter {
@@ -520,7 +567,6 @@ body {
 
 .portfolio-border {
     border: 0.5px solid var(--color-light);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
     padding-top: 32px;
     padding-bottom: 32px;
     padding-left: 16px;
