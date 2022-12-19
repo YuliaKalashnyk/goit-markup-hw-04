@@ -167,6 +167,8 @@ body {
 .hero {
     padding-top: 192px;
     padding-bottom: 192px;
+    max-width: 1140px;
+    margin: 0 auto;;
     background: var(--color-title);
     text-align: center;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
@@ -260,7 +262,6 @@ body {
 
 .about-bg {
     display: flex;
-    width: 264px;
     height: 112px;
     justify-content: center;
     align-items: center;
@@ -373,6 +374,7 @@ body {
 
 .customers-link {
     display: flex;
+    fill: var(--color-border-icons);
     border: 1px solid var(--color-border-icons);
     border-radius: 4px;
     padding: 16px 32px;
@@ -383,6 +385,10 @@ body {
     justify-content: center;
 }
 
+.customers-item {
+    width: calc((100% - 120px)/6);
+}
+
 .customers-item:not(:last-child) {
     margin-right: 24px;
 }
@@ -390,16 +396,9 @@ body {
 .customers-link:hover,
 .customers-link:focus {
     border: 1px solid var(--color-accent);
-}
-
-.customers-icon {
-    fill: var(--color-border-icons);
-}
-
-.customers-icon:hover,
-.customers-icon:focus {
     fill: var(--color-accent);
 }
+
 
 
 
